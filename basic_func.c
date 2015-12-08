@@ -24,4 +24,8 @@ int main(void){
 	printf("Largest of 2, 3, 4 is : %.2f\n",largest_of_three_num(2,3,4));
 	printf("Largest of -78, -3, -27 is : %.2f\n",largest_of_three_num(-78,-3,-27));
 	printf("Largest of 2.23, 3.23, 4.09 is : %.2f\n",largest_of_three_num(2.23,3.23,4.09));
+
+	printf("smallest of 2, 3, 4 is : %.2f\n",smallest_of_three_num(2,3,4));
+	printf("smallest of -78, -3, -27 is : %.2f\n",smallest_of_three_num(-78,-3,-27));
+	printf("smallest of 2.23, 3.23, 4.09 is : %.2f\n",smallest_of_three_num(2.23,3.23,4.09));
 };

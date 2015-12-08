@@ -28,3 +28,12 @@ float largest_of_three_num(float a, float b, float c){
 	else
 		return c;
 };
+
+float smallest_of_three_num(float a, float b, float c){
+	if(a<b && a<c)
+		return a;
+	else if(b<c && b<a)
+		return b;
+	else
+		return c;
+};
