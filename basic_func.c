@@ -21,6 +21,8 @@ int main(void){
 	printf("Average of three number 2, -3 and -4 is: %.2f\n",average_of_three_num(2,-3,-4));
 	printf("Average of three number 2.2, 3.4 and 4.5 is: %.2f\n",average_of_three_num(2.2,3.4,4.5));
 
+	// printf("Average of three number in percentage 2, 3 and 4 is: %d\n",average_of_three_num_in_percentage(2,3,4,100));
+
 	printf("Largest of 2, 3, 4 is : %.2f\n",largest_of_three_num(2,3,4));
 	printf("Largest of -78, -3, -27 is : %.2f\n",largest_of_three_num(-78,-3,-27));
 	printf("Largest of 2.23, 3.23, 4.09 is : %.2f\n",largest_of_three_num(2.23,3.23,4.09));
@@ -28,4 +30,17 @@ int main(void){
 	printf("smallest of 2, 3, 4 is : %.2f\n",smallest_of_three_num(2,3,4));
 	printf("smallest of -78, -3, -27 is : %.2f\n",smallest_of_three_num(-78,-3,-27));
 	printf("smallest of 2.23, 3.23, 4.09 is : %.2f\n",smallest_of_three_num(2.23,3.23,4.09));
+
+	printf("gcd of 22,4 is : %d\n",gcd(22,4));
+	printf("gcd of 4,22 is : %d\n",gcd(4,22));
+	printf("gcd of 4,20 is : %d\n",gcd(4,20));
+
+	printf("lcm of 22,4 is : %d\n",lcm(22,4));
+	printf("lcm of 4,22 is : %d\n",lcm(4,22));
+	printf("lcm of 10,23 is : %d\n",lcm(10,23));
+
+	printf("Simple Interest of (1000,2,10) is :%d\n",simple_int(1000,2,10));
+
+	printf("compound Interest of (2000,1,9) is :%f\n",compound_int(2000,1,9));
+
 };
