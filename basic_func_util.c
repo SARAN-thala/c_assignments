@@ -20,9 +20,9 @@ int average_of_three_num(float num1, float num2, float num3){
 	return result;
 };
 
-// int average_of_three_num_in_percentage(int num1, int num2, int num3, int n){
-// 	return (average_of_three_num(num1,num2,num3)/n)*100;
-// }
+int average_of_three_num_in_percentage(float num1, float num2, float num3, float n){
+	return (average_of_three_num(num1,num2,num3)/n)*100;
+}
 
 float largest_of_three_num(float a, float b, float c){
 	if(a>b && a>c)
