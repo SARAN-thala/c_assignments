@@ -61,16 +61,33 @@ int lcm(int a, int b){
 int simple_int(int p, int n, int r){
 	int interest = ((p*n*r)/100);
 	return interest;
-}
+};
 
-int compound_int(int p,int n,int r){
-	float total = p*(pow(1+(r/100),n));
+int compound_int(float p, float n, float r){
+	float total = (p*pow((1+r/100),n));
 	return total;
-}
+};
 
+int celsius(int num){
+	int farheinheit = ((9*num)/5)+32;
+	return farheinheit;
+};
 
+int farheinheit(int num){
+	int celsius = 5*((num-32)/9);
+	return celsius;
+};
 
-
+int sum_of_n_numbers(int num){
+	if(num>=0){
+		int result = num*(num+1)/2;
+		return result;
+	}
+	else{
+		int out = (-num*(num-1)/2);
+		return out;
+	}
+};
 
 
 

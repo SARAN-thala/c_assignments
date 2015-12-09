@@ -41,6 +41,13 @@ int main(void){
 
 	printf("Simple Interest of (1000,2,10) is :%d\n",simple_int(1000,2,10));
 
-	printf("compound Interest of (2000,1,9) is :%f\n",compound_int(2000,1,9));
+	printf("compound Interest of (2000,1,9) is :%d\n",compound_int(2000,1,9));
+
+	printf("45 celsius = %d farheinheit \n",celsius(45));
+
+	printf("563 farheinheit = %d celsius \n",farheinheit(563));
+
+	printf("Sum of 4 is : %d\n",sum_of_n_numbers(4));
+	printf("Sum of -4 is : %d\n",sum_of_n_numbers(-4));
 
 };
