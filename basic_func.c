@@ -21,11 +21,11 @@ int main(void){
 	printf("Average of three number 2, -3 and -4 is: %.2f\n",average_of_three_num(2,-3,-4));
 	printf("Average of three number 2.2, 3.4 and 4.5 is: %.2f\n",average_of_three_num(2.2,3.4,4.5));
 
-	printf("Average of three number in percentage 2, 3 and 4 is: %.2f percentage \n",
+	printf("Average of three number in percentage 2, 3 and 4 is: %d percentage \n",
 			average_of_three_num_in_percentage(2,3,4,100));
-	printf("Average of three number in percentage 2, -3 and -4 is: %.2f percentage \n",
+	printf("Average of three number in percentage 2, -3 and -4 is: %d percentage \n",
 			average_of_three_num_in_percentage(2,-3,-4,100));
-	printf("Average of three number in percentage 2.2, 3.4 and 4.5 is: %.2f percentage \n",
+	printf("Average of three number in percentage 2.2, 3.4 and 4.5 is: %d percentage \n",
 			average_of_three_num_in_percentage(2.2,3.4,4.5,100));
 
 	printf("Largest of 2, 3, 4 is : %.2f\n",largest_of_three_num(2,3,4));

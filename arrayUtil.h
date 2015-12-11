@@ -1,0 +1,1 @@
+int sum_of_array(int num_arr[10]);
