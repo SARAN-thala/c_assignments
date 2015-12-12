@@ -1,11 +1,8 @@
 #include <stdio.h>
-#include <math.h>
 
-int sum_of_array(){
-	int num_arr[10];
+int sum_of_array(int num_arr[],int len){
 	int sum=0;
-
-	for (int i = 0; i < 10; ++i){
+	for (int i = 0; i < len; ++i){
 		sum = sum+num_arr[i];
 	}
 	return sum;

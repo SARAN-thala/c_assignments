@@ -1,1 +1,1 @@
-int sum_of_array(int);
+int sum_of_array(int[],int);
