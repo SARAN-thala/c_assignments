@@ -92,41 +92,70 @@
 //    printf("Average of 2,32,32,1,22,45,678,5,10,15 = %f\n", average(10, 2,32,32,1,22,45,678,5,10,15));
 // }
 
+// #include <stdio.h>
+
+// int print_even(int arr[],int len){
+// 	for (int i = 0; i < len; ++i){
+// 			printf("the even number is : %d\n",arr[i]);
+// 	}
+// 	printf("yooohiooo first void function\n");
+// 	return 23;
+// }
+
+
+// void swap(int *a, int *b,int *temp){
+// 	*temp = *a;
+// 	*a = *b;
+// 	*b = *temp;
+// }
+
+// int main(){
+// 	int a[] = {3,2,1,10,8,5};
+// 	int length = sizeof(a)/sizeof(a[0]);
+// 	print_even(a,length);
+// 	//pointer example
+// 	int first = 20;
+// 	int second = 30;
+// 	int temp;
+// 	printf("before swaping a is :%d and b is :%d and temp is: %d\n",first,second,temp);
+// 	swap(&first,&second,&temp);
+// 	printf("after swaping a is %d and b is %d and temp is :%d",first,second,temp);
+// }
+ 
+// ----------------------------pointer--------------------------------
+
+
 #include <stdio.h>
 
-int print_even(int arr[],int len){
-	for (int i = 0; i < len; ++i){
-			printf("the even number is : %d\n",arr[i]);
-	}
-	printf("yooohiooo first void function\n");
-	return 23;
+void myfunc(int& num){
+	num=10;
 }
+int main(void){
+// // 	int a;
+// // 	double *p;
+// // 	char c='a';
+
+// // 	// printf("Address of *p is :%ld\n",*p);
+// // 	// p++;
+// // 	// printf("Address of after *p is :%ld\n",*p);
+// // 	// p--;
+// // 	// printf("Address of *p is :%ld\n",*p);
+// // 	// p=p+1;
+// // 	// printf("Address of *p is :%ld\n",*p);
+// // 	printf("Addres of a is :%d\n",a);
 
 
-void swap(int *a, int *b,int *temp){
-	*temp = *a;
-	*a = *b;
-	*b = *temp;
+// 	int a;
+// 	for(a=0;a<10;a++){
+// 		printf("%d\n",a);
+// 	}
+
+// }
+
+int a;
+myfunc(&a);
+printf("%d\n",a);
 }
-
-int main(){
-	int a[] = {3,2,1,10,8,5};
-	int length = sizeof(a)/sizeof(a[0]);
-	print_even(a,length);
-	//pointer example
-	int first = 20;
-	int second = 30;
-	int temp;
-	printf("before swaping a is :%d and b is :%d and temp is: %d\n",first,second,temp);
-	swap(&first,&second,&temp);
-	printf("after swaping a is %d and b is %d and temp is :%d",first,second,temp);
-}
- 
-
-
-
-
-
 
 
 

@@ -17,8 +17,10 @@ int fibo(int num){
 }
 
 int fibonacci(int num){
+	int fibo = 0;
 	for (int i = 1; i <= num; ++i){
-		printf("%d\t", fibo(i));
+		fibo = fibo+i;
+		printf("%d\n",fibo);
 	}
 	return 0;
 }
