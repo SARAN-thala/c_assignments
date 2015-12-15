@@ -125,38 +125,60 @@
 // ----------------------------pointer--------------------------------
 
 
+// #include <stdio.h>
+
+// void myfunc(int& num){
+// 	num=10;
+// }
+// int main(void){
+// // // 	int a;
+// // // 	double *p;
+// // // 	char c='a';
+
+// // // 	// printf("Address of *p is :%ld\n",*p);
+// // // 	// p++;
+// // // 	// printf("Address of after *p is :%ld\n",*p);
+// // // 	// p--;
+// // // 	// printf("Address of *p is :%ld\n",*p);
+// // // 	// p=p+1;
+// // // 	// printf("Address of *p is :%ld\n",*p);
+// // // 	printf("Addres of a is :%d\n",a);
+
+
+// // 	int a;
+// // 	for(a=0;a<10;a++){
+// // 		printf("%d\n",a);
+// // 	}
+
+// // }
+
+// int a;
+// myfunc(&a);
+// printf("%d\n",a);
+// }
+// -------------------------------------------------------------------------------
+
 #include <stdio.h>
 
-void myfunc(int& num){
-	num=10;
-}
 int main(void){
-// // 	int a;
-// // 	double *p;
-// // 	char c='a';
+	int x=1,y=2,a[10];
+	int *ip;
+	printf("the value of x,y,a[10] is %d,%d,%d\n", x,y,a[10]);
+	printf("the Address of x,y,a[10] is %d,%d,%d\n", &x,&y,&a[10]);
+	printf("the value of ip is %d\n", *ip);
 
-// // 	// printf("Address of *p is :%ld\n",*p);
-// // 	// p++;
-// // 	// printf("Address of after *p is :%ld\n",*p);
-// // 	// p--;
-// // 	// printf("Address of *p is :%ld\n",*p);
-// // 	// p=p+1;
-// // 	// printf("Address of *p is :%ld\n",*p);
-// // 	printf("Addres of a is :%d\n",a);
+	ip=&x;
+	printf("the value of ip %d\n", ip);
 
+	y=*ip;
+	printf("the value of y %d\n", y);
+	*ip=0;
+	printf("the value of ip %d\n", ip);
+	ip=&a[10];
 
-// 	int a;
-// 	for(a=0;a<10;a++){
-// 		printf("%d\n",a);
-// 	}
+	printf("the value of a %d\n", ip);
 
-// }
-
-int a;
-myfunc(&a);
-printf("%d\n",a);
 }
-
 
 
 
