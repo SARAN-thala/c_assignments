@@ -158,33 +158,72 @@
 // }
 // -------------------------------------------------------------------------------
 
+// #include <stdio.h>
+
+// int main(void){
+// 	int x=1,y=2,a[10];
+// 	int *ip;
+// 	printf("the value of x,y,a[10] is %d,%d,%d\n", x,y,a[10]);
+// 	printf("the Address of x,y,a[10] is %d,%d,%d\n", &x,&y,&a[10]);
+// 	printf("the value of ip is %d\n", *ip);
+
+// 	ip=&x;
+// 	printf("the value of ip %d\n", ip);
+
+// 	y=*ip;
+// 	printf("the value of y %d\n", y);
+// 	*ip=0;
+// 	printf("the value of ip %d\n", ip);
+// 	ip=&a[10];
+
+// 	printf("the value of a %d\n", ip);
+// }
+// ------------------------------------------------------------------------------------
+
+// #include <stdio.h>
+// int main(void){
+// 	int j, k;
+// 	int *ptr;
+// 	j = 1;
+// 	k = 2;
+// 	ptr = &k;
+// 	printf("j has the value %d and is stored at %p\n", j, &j);
+// 	printf("k has the value %d and is stored at %p\n", k, &k);
+// 	printf("ptr has the value %p and is stored at %p\n", ptr, &ptr);
+// 	printf("The value of the integer pointed to by ptr is %d\n", *ptr);
+// 	return 0;
+// }
+
+//---------------------------------------------------------------------------------------
+
 #include <stdio.h>
 
+int my_array[] = {1,23,-2,45,-10};
+int *ptr;
+
 int main(void){
-	int x=1,y=2,a[10];
-	int *ip;
-	printf("the value of x,y,a[10] is %d,%d,%d\n", x,y,a[10]);
-	printf("the Address of x,y,a[10] is %d,%d,%d\n", &x,&y,&a[10]);
-	printf("the value of ip is %d\n", *ip);
+	ptr = my_array;
 
-	ip=&x;
-	printf("the value of ip %d\n", ip);
+	for (int i = 0; i < 5; ++i){
+		printf("my_array[%d] = %d\n",i,my_array[i]);
+		printf("ptr+%d = %d\n ",i,*(ptr++));
+	}
+	return 0;
+} 
 
-	y=*ip;
-	printf("the value of y %d\n", y);
-	*ip=0;
-	printf("the value of ip %d\n", ip);
-	ip=&a[10];
+// -------------------------------------------------------------------
 
-	printf("the value of a %d\n", ip);
+// #include <stdio.h>
 
-}
-
+// int main(void){
+// 	int a,b;
+// 	a=2;
+// 	b=3;
 
 
-
-
-
+// 	printf("the value of a is = %d\n",a);
+// 	printf("the value of b is = %d\n",*b);
+// }
 
 
 
