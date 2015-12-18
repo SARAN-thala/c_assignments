@@ -7,3 +7,9 @@ int sum_of_array(int num_arr[],int len){
 	}
 	return sum;
 };
+
+void reverse(int n[], int len){
+	for (int i = len-1; i >=0; i--){
+		printf("%d",n[i]);
+	}
+}

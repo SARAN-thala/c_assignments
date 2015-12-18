@@ -196,20 +196,20 @@
 
 //---------------------------------------------------------------------------------------
 
-#include <stdio.h>
+// #include <stdio.h>
 
-int my_array[] = {1,23,-2,45,-10};
-int *ptr;
+// int my_array[] = {1,23,-2,45,-10};
+// int *ptr;
 
-int main(void){
-	ptr = my_array;
+// int main(void){
+// 	ptr = my_array;
 
-	for (int i = 0; i < 5; ++i){
-		printf("my_array[%d] = %d\n",i,my_array[i]);
-		printf("ptr+%d = %d\n ",i,*(ptr++));
-	}
-	return 0;
-} 
+// 	for (int i = 0; i < 5; ++i){
+// 		printf("my_array[%d] = %d\n",i,my_array[i]);
+// 		printf("ptr+%d = %d\n ",i,*(ptr++));
+// 	}
+// 	return 0;
+// } 
 
 // -------------------------------------------------------------------
 
@@ -224,8 +224,42 @@ int main(void){
 // 	printf("the value of a is = %d\n",a);
 // 	printf("the value of b is = %d\n",*b);
 // }
+// ---------------------------------------------------------------------------
 
+// #include <stdio.h>
 
+// int main(void){
+// 	// int a=23;
+// 	// float b=12.1;
+// 	// double c =21.00;
+// 	// char d[] ={'s','a','r','a','n'};
+// 	// char e[] = "sekar";
+// 	char *f = "raj";
+
+// 	// printf("Address of d is %s\n", d);
+// 	// printf("Address of c is %f\n", c);
+// 	// printf("Address of b is %f\n", b);
+// 	printf("Address of f is %p\n", f[0]);
+// 	printf("Address of f is %p\n", f[1]);
+// 	return 0;
+// }
+// --------------------------------------------------------------------------------------
+
+#include <stdio.h>
+
+int main(void){
+	// int a[]={};
+	char *c="ABCDEF";
+	
+
+	// int r=33;
+	// int *c = &r;
+	// b=c;
+
+	printf("%s\n",c);
+	// printf("%d\n",*b);
+
+}
 
 
 
