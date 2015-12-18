@@ -5,5 +5,4 @@ var fibo = function(num){
 		return 1;
 	return fibo(num-1)+fibo(num-2);
 };
-
 console.log(fibo(5));
