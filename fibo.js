@@ -8,7 +8,6 @@ var fibo = function(num){
 console.log(fibo(5));
 console.log('saran');
 // XXX: i think its very difficult code to understand
-
 function average(a,b,c) {
 	return (a+b+c)/3;
 }
