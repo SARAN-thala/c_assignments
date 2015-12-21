@@ -15,3 +15,6 @@ int main(){
 	reverse(n,leng);
 	return 0;
 }
+
+
+
