@@ -13,19 +13,31 @@
 // };
 // --------------------------------------------
 
+// #include <stdio.h>
+//
+// struct a1{
+//   long int * c;
+//   char * a;
+//   char s;
+//   int * r;
+//   // char g;
+//   // char y;a
+//   // int h;
+//   char o;
+// };
+//
+// int main(void){
+//   printf("%ld\n", sizeof(struct a1));
+// }
+// -----------------------------------------------------
+
 #include <stdio.h>
 
-struct a1{
-  long int * c;
-  char * a;
-  char s;
-  int * r;
-  // char g;
-  // char y;
-  // int h;
-  char o;
-};
+int main(){
+  int a,b,c;
+  printf("Enter the num: \t",a,b);
+  scanf("%d%d",&a,&b );
 
-int main(void){
-  printf("%ld\n", sizeof(struct a1));
+  c=a+b;
+  printf("The answer is : %d\n",c);
 }
