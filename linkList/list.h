@@ -2,13 +2,14 @@ typedef struct list{
   struct element *first;
   struct element *last;
   int length;
-}List;
+} List;
 
 typedef struct element{
   int value;
   struct element *next;
-}Element;
+} Element;
 
-void initialise_element(List *);
-void push(List *,int);
+void initialize_list(List *);
+void enqueue(List *,int);
 void print_list(List *);
+int dequeue(List *list);
