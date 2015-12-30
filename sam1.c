@@ -94,4 +94,4 @@ int main(){
   masked_raider[4]='!';
   printf("Marked raider is %s,Jimmy is %s\n", masked_raider,jimmy);
   return 0;
-}
+};
