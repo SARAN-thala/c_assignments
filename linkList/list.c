@@ -3,7 +3,7 @@
 #include "list.h"
 
 void initialize_list(List *list) {
-  list->first = list->last = NULL;
+  list->first = NULL;
   list->length = 0;
 };
 
@@ -18,9 +18,13 @@ void enqueue(List *list,int value) {
     list->last=e;
   }
   list->length++;
+  // free(e);
 };
 
 int dequeue(List *list){
+  if(list->length==0){
+    return 0;
+  }
   Element *e = list->first;
   int value = e->value;
   list->first = e->next;

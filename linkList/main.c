@@ -16,9 +16,9 @@ int main(void){
   printf("dequeue : %d\n", dequeue(&list));
   printf("dequeue : %d\n", dequeue(&list));
   printf("dequeue : %d\n", dequeue(&list));
-  printf("dequeue : %d\n", dequeue(&list));
 
   print_list(&list);
   printf("List length %d\n", list.length);
+
   return 0;
 }
