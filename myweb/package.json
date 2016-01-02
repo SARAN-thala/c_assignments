@@ -1,0 +1,31 @@
+{
+  "name": "c_assignments",
+  "version": "1.0.0",
+  "description": "",
+  "main": "controlTest.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SARAN-thala/c_assignments.git"
+  },
+  "author": "saran",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SARAN-thala/c_assignments/issues"
+  },
+  "homepage": "https://github.com/SARAN-thala/c_assignments#readme",
+  "devDependencies": {
+    "chai": "^3.4.1",
+    "express": "^4.13.3",
+    "mocha": "^2.3.4",
+    "sinon": "^1.17.2",
+    "supertest": "^1.1.0"
+  },
+  "dependencies": {
+    "body-parser": "^1.14.2",
+    "cookie-parser": "^1.4.0"
+  }
+}
